@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Фредерик Шопен — Жизнь и творчество</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Верхний фрейм */
+        .top-frame {
+            background-color: #f0f4f8;
+            border-bottom: 2px solid #b0c4de;
+            padding: 20px;
+        }
+        .top-frame h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #2c3e50;
+        }
+
+        /* Нижняя часть (меню + содержание) */
+        .bottom-row {
+            display: flex;
+        }
+
+        /* Левый фрейм: МЕНЮ */
+        .menu-frame {
+            width: 220px;
+            background-color: #f7fafc;
+            border-right: 2px solid #b0c4de;
+            padding: 20px;
+        }
+        .menu-frame h2 {
+            font-size: 18px;
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .menu-frame ul {
+            padding-left: 18px;
+            margin: 0;
+            line-height: 1.8;
+        }
+        .menu-frame a {
+            color: #2980b9;
+            text-decoration: underline;
+            font-size: 15px;
+        }
+
+        /* Правый фрейм: СОДЕРЖАНИЕ */
+        .content-frame {
+            flex: 1;
+            padding: 20px;
+        }
+        .content-frame h2 {
+            font-size: 20px;
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 8px;
+        }
+
+        /* Блоки разделов */
+        .block {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            background-color: #fafbfc;
+        }
+        .block h3 {
+            color: #2980b9;
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .block p, .block li {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Верхний фрейм -->
+    <div class="top-frame">
+        <h1>Фредерик Шопен — Жизнь и творчество</h1>
+    </div>
+
+    <!-- Нижняя часть -->
+    <div class="bottom-row">
+        
+        <!-- МЕНЮ (Левый фрейм) -->
+        <div class="menu-frame">
+            <h2>МЕНЮ</h2>
+            <ul>
+                <li><a href="#bio">Биография</a></li>
+                <li><a href="#works">Сочинения</a></li>
+                <li><a href="#audio">Аудиозаписи</a></li>
+                <li><a href="#facts">Факты</a></li>
+            </ul>
+        </div>
+
+        <!-- СОДЕРЖАНИЕ (Правый фрейм) -->
+        <div class="content-frame">
+            <h2>СОДЕРЖАНИЕ</h2>
+
+            <!-- БЛОК 1: Биография -->
+            <div id="bio" class="block">
+                <h3>1. Биография</h3>
+                <div style="display: flex; gap: 20px; align-items: flex-start;">
+                    <div style="flex: 1;">
+                        <p style="margin: 0;">
+                            Фредерик Шопен (1810–1849) — выдающийся польский композитор и пианист-виртуоз, главный «поэт фортепиано» эпохи романтизма. Родился в Польше, но из-за восстания 1830 года был вынужден обосноваться в Париже. Всю жизнь тосковал по родине, создавал гениальную музыку и боролся с тяжёлой болезнью, уйдя из жизни в возрасте 39 лет.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="1.jpg" alt="Фредерик Шопен" style="width: 140px; height: auto; border-radius: 6px; border: 1px solid #ccc;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- БЛОК 2: Главные сочинения -->
+            <div id="works" class="block">
+                <h3>2. Главные сочинения</h3>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li><strong>Ноктюрны:</strong> лиричные и глубокие пьесы (например, Ноктюрн ми-бемоль мажор).</li>
+                    <li><strong>Вальсы:</strong> изящные салонные танцы (Вальс «Минутка», Вальс № 7).</li>
+                    <li><strong>Полонезы и мазурки:</strong> произведения, наполненные духом и болью польской родины.</li>
+                    <li><strong>Этюды и прелюдии:</strong> революционные по технике и эмоциональной силе шедевры.</li>
+                </ul>
+            </div>
+
+            <!-- БЛОК 3: Аудиозаписи -->
+            <div id="audio" class="block">
+                <h3>3. Аудиозаписи</h3>
+                <p style="margin: 0 0 15px 0;">Послушайте известнейшие произведения композитора:</p>
+
+                <div style="margin-bottom: 15px;">
+                    <p style="margin: 0 0 5px 0; font-size: 14px; font-weight: bold;">1. Ноктюрн ми-бемоль мажор, соч. 9 № 2</p>
+                    <audio controls style="width: 100%;">
+                        <source src="music.mp3" type="audio/mpeg">
+                        Ваш браузер не поддерживает аудиоэлемент.
+                    </audio>
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <p style="margin: 0 0 5px 0; font-size: 14px; font-weight: bold;">2. Frederic Chopin - Ballade No.1 In G Minor (OST Пианист)</p>
+                    <audio controls style="width: 100%;">
+                        <source src="music2.mp3" type="audio/mpeg">
+                        Ваш браузер не поддерживает аудиоэлемент.
+                    </audio>
+                </div>
+
+                <div>
+                    <p style="margin: 0 0 5px 0; font-size: 14px; font-weight: bold;">3. Frederic Chopin - Etude No.3</p>
+                    <audio controls style="width: 100%;">
+                        <source src="music3.mp3" type="audio/mpeg">
+                        Ваш браузер не поддерживает аудиоэлемент.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- БЛОК 4: Интересные факты -->
+            <div id="facts" class="block">
+                <h3>4. Интересные факты</h3>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li>Шопен почти не давал публичных концертов — его стихией были закрытые музыкальные салоны Парижа.</li>
+                    <li>Он обладал невероятно мягким звукоизвлечением и играл тише многих современников, заставляя публику вслушиваться.</li>
+                    <li>Согласно предсмертной воле, его сердце вывезли из Франции и замуровали в колонне церкви Святого Креста в Варшаве.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
